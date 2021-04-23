@@ -9,6 +9,6 @@
         version: "{{  versionToBeDownloaded }}"
         repository_url: 'http://52.53.252.193:8081/repository/maven-releases/'
         username: 'admin'
-        password: 'admin123'
+        password: 'admin123updated'
         dest: /opt
 
