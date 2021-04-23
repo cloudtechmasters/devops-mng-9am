@@ -1,0 +1,14 @@
+---
+- hosts: devserver
+  tasks:
+    - name: download jar file nexus repository
+      become_user: jenkins
+      maven_artifact:
+        group_id: org.springframework
+        artifact_id: gs-spring-boot
+        version: "{{  versionToBeDownloaded }}"
+        repository_url: 'http://52.53.252.193:8081/repository/maven-releases/'
+        username: 'admin'
+        password: 'admin123'
+        dest: /opt
+
